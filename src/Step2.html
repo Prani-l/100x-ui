@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../dist/output.css">
+</head>
+<body
+    class="bg-black min-h-screen w-full flex flex-col px-4 pb-5 flex-shrink-0 gap-5">
+
+    <!-- head section -->
+    <nav class="flex py-3 px-0 items-center gap-5 self-stretch">
+        <a href="./Step1.html"><img class=" shrink-0" src="./../public/images/x.svg" alt=""></a>
+        <h2 class="text-Neutral50 font-bold font-Inter text-center text-base">Step 2 out of 4</h2>   
+    </nav>
+    <div class="flex flex-col items-start self-stretch gap-5">
+        <h2 class="text-neutral-50 font-extrabold font-Inter text-2xl ">
+            Create your account
+        </h2>
+        <!-- fieldsets  -->
+        <div class="flex flex-col gap-8 w-full">
+            <!-- name -->
+            <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-Twitter_blue_bydef group">
+                <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                    <div class="px-1">
+                        Name
+                    </div>
+                </legend>
+                <input type="text" placeholder="Name" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+            </fieldset>
+            <!-- email -->
+            <fieldset class="pt-2 pb-4 px-3 gap-2.5 border rounded border-Neutral500 group focus-within:border-Twitter_blue_bydef">
+                <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                    <div class="px-1"> Email </div>
+                </legend>
+                <input class="w-full bg-transparent focus:outline-none text-Neutral50 placeholder:text-Neutral500 " type="email" placeholder="Email">
+            </fieldset>
+            <!-- dob -->
+            <fieldset class="pt-2 pb-4 px-3 gap-2.5 border rounded border-Neutral500 group focus-within:border-Twitter_blue_bydef">
+                <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                    <div class="px-1"> Date of birth </div>
+                </legend>
+                <input class="bg-black w-full text-xl font-normal self-stretch gap-2.5 rounded text-neutral-50 focus:outline-none"
+                type="date" placeholder="D.O.B">
+            </fieldset>
+        </div>
+        <!-- S3 navigating button -->
+        <div  class="flex items-end px-5 absolute bottom-4 mx-auto">
+            <a href="./Step3.html">
+                <button
+                class="flex justify-center items-center p-5 rounded-full gap-2.5 backdrop-blur-xl shadow-def w-72 font-bold text-base text-Neutral50 bg-Twitter_blue_bydef">
+                Sign up
+                </button>
+            </a>
+            
+        </div>
+        
+       
+    </div>
+    
+</body>
+</html>
