@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./../dist/output.css">
 </head>
 <body
-    class="bg-black min-h-screen w-full flex flex-col px-4 pb-5 flex-shrink-0 gap-5  font-Inter">
+    class="bg-black min-h-screen w-full flex flex-col px-4 pb-5 flex-shrink-0 gap-5 font-Inter">
 
     <!-- head section -->
     <nav class="flex py-3 px-0 items-center gap-5 self-stretch">
@@ -17,16 +17,45 @@
         
         <h2 class="text-Neutral50 font-bold font-Inter text-center text-base">Step 3 out of 4</h2>   
     </nav>
-    <section class="w-full flex flex-col items-end self-stretch gap-10">
+    <section class="w-full flex flex-col self-stretch gap-10">
         <!-- main top [header] -->
         <div class="flex flex-col gap-2 self-stretch ">
             <h2 class=" text-Neutral50 font-bold text-2xl ">
                 We sent you a code
             </h2>
-            para
+            <p class="text-neutral-500 text-sm">
+                Enter it below to verify *********@gmail.com
+            </p>
 
         </div>
-
+        <!-- main bottom part [verification] -->
+        <div class=" flex flex-col gap-3">
+                <fieldset class="px-3 flex justify-between pt-2 pb-4 border border-neutral-500 rounded focus-within:border-Twitter_blue_bydef group">
+                    <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                        <div class="px-1">
+                            Verification code
+                        </div>
+                    </legend>
+                    <input type="text" placeholder="Verification code" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </fieldset>
+                <h3 class="text-Twitter_blue_bydef text-sm flex justify-end">
+                    Didn't receive a code?
+                </h3>
+        </div>
     </section>
+    <!-- S3 navigating button -->
+    <div  class="flex items-end mx-auto absolute bottom-4">
+        <a href="./Step4.html">
+            <button
+            class="flex justify-center items-center px-6 py-3 rounded-full gap-2.5 backdrop-blur-xl shadow-def w-80 font-bold text-base bg-neutral-400 hover:bg-neutral-200 active:bg-neutral-200">
+            Next
+            </button>
+        </a>
+        
+    </div>
 </body>
 </html>
