@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100x</title>
+    <link rel="stylesheet" href="./../dist/output.css">
+</head>
+<body>
+    <main class="flex flex-col px-4 bg-Neutral1000 w-full min-h-screen">
+        <!-- top -->
+        <nav class="flex justify-between items-center py-3 px-2">
+            <!-- left part -->
+            <div class="flex gap-5">
+                <a href="./Profilepage.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M12 19.5L5 12.5L12 5.5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 12.5H5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </a>
+                <h2 class="font-bold font-Inter text-lg text-neutral-50">Edit Profile</h2>
+            </div>
+            <!-- right part -->
+            <button
+            class="flex px-5 py-2 items-center h-8 gap-2.5 font-bold text-sm rounded-3xl bg-Neutral50 ">
+                Save
+            </button>
+        </nav>
+        <!-- header pic -->
+        <header class="w-full h-52 overflow-hidden relative">   
+            <img class="w-full object-cover origin-center" src="./../public/images/header.png" alt="">
+            <div class="absolute left-1/2 top-1/2 -translate-y-2/4 -translate-x-2/4 gap-5 flex items-center z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 21C2.45 21 1.979 20.804 1.587 20.412C1.195 20.02 0.999335 19.5493 1 19V7C1 6.45 1.196 5.979 1.588 5.587C1.98 5.195 2.45067 4.99933 3 5H6.15L8 3H14V5H8.875L7.05 7H3V19H19V10H21V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H3ZM19 7V5H17V3H19V1H21V3H23V5H21V7H19ZM11 17.5C12.25 17.5 13.3127 17.0623 14.188 16.187C15.0633 15.3117 15.5007 14.2493 15.5 13C15.5 11.75 15.0623 10.6873 14.187 9.812C13.3117 8.93667 12.2493 8.49933 11 8.5C9.75 8.5 8.68734 8.93767 7.812 9.813C6.93667 10.6883 6.49934 11.7507 6.5 13C6.5 14.25 6.93767 15.3127 7.813 16.188C8.68834 17.0633 9.75067 17.5007 11 17.5ZM11 15.5C10.3 15.5 9.70834 15.2583 9.225 14.775C8.74167 14.2917 8.5 13.7 8.5 13C8.5 12.3 8.74167 11.7083 9.225 11.225C9.70834 10.7417 10.3 10.5 11 10.5C11.7 10.5 12.2917 10.7417 12.775 11.225C13.2583 11.7083 13.5 12.3 13.5 13C13.5 13.7 13.2583 14.2917 12.775 14.775C12.2917 15.2583 11.7 15.5 11 15.5Z" fill="#F9F9F9"/>
+                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+        </header>
+        <section class="relative w-full ">
+            <img class="z-10 h-20 w-20 absolute -top-14 left-4 rounded-full" src="./../public/images/User-1.png" alt="">
+            <div class="w-full flex flex-col gap-5 mt-8">
+                <!-- name -->
+                <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-Twitter_blue_bydef group">
+                    <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                        <div class="px-1">
+                            Name
+                        </div>
+                    </legend>
+                    <input type="text" placeholder="Name" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+                </fieldset>
+                <!-- email -->
+                <fieldset class="pt-2 pb-4 px-3 gap-2.5 border rounded border-Neutral500 group focus-within:border-Twitter_blue_bydef">
+                    <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                        <div class="px-1"> Email </div>
+                    </legend>
+                    <input class="w-full bg-transparent focus:outline-none text-Neutral50 placeholder:text-Neutral500 " type="email" placeholder="Email">
+                </fieldset>
+                <!-- bio -->
+                <fieldset class="px-3 pt-2 pb-10 border border-neutral-500 rounded focus-within:border-Twitter_blue_bydef group">
+                    <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                        <div class="px-1">
+                            Bio
+                        </div>
+                    </legend>
+                    <input type="text" placeholder="Bio " class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+                </fieldset>
+                <!-- location -->
+                <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-Twitter_blue_bydef group">
+                    <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                        <div class="px-1">
+                            location
+                        </div>
+                    </legend>
+                    <input type="text" placeholder="location" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+                </fieldset>
+                <!-- Website -->
+                <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-Twitter_blue_bydef group">
+                    <legend class="text-neutral-500 text-xs font-medium group-focus-within:text-Twitter_blue_bydef">
+                        <div class="px-1">
+                            Website
+                        </div>
+                    </legend>
+                    <input type="text" placeholder="Website" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+                </fieldset>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
